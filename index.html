@@ -1,1 +1,145 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Berana's Portfolio</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        nav {
+            box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, .1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #nav-links {
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #nav-links a{
+            font-family: "Interim";
+            color: inherit;
+            text-decoration: none;
+            margin: 0 20px 0 20px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container div {
+            flex: 1;
+        }
+
+        #skills {
+            display: flex;
+            flex-direction: column;
+        }
+        
+    </style>
+
+  </head>
+
+  <body>
+    <nav>
+        <div>
+            <h2>Ian Berana</h2>
+        </div>
+        <div id="nav-links">
+            <h2><a href="">Home</a></h2>
+            <h2><a href="">Projects</a></h2>
+            <h2><a href="">About</a></h2>
+            <h2><a href="">Contact</a></h2>
+        </div>
+    </nav>
+
+    <div id="home" class="container">
+        <div id="pic">
+            <img src="" alt="personal img">
+        </div>
+        <div id="description">
+            <p>
+                Welcome to my portfolio! I'm a passionate Frontend Software Engineer dedicated to crafting engaging and intuitive user experiences. 
+                With expertise in HTML, CSS, JavaScript, and frameworks like React.js, I specialize in tuning designs into seamless responsive websites and web applications. 
+                Explore my projects to see how I blend creativity with functionality to bring ideas to life.
+            </p>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h3 style="text-align: center;">Previous Projects</h3>
+        <div class="container">
+            <div>
+                <img src="" alt="SchoHub">
+                <p>SchoHub</p>
+                <p>
+                    
+                </p>
+            </div>
+            <div>
+                <img src="" alt="Stress Level Identifier">
+                <p>Stress Level Identifier</p>
+                <p>
+                    A python program that identifies the stress level, according
+                    to the perceived stress scale (e.g low, moderate, high),
+                    exhibited by a certain Twitter post
+                </p>
+            </div>
+            <div>
+                <img src="" alt="F1 Retro">
+                <p>F1 Retro</p>
+                <p>
+                    A JavaFX 2D racing game.
+                </p>
+            </div>
+            <div>
+                <img src="" alt="IRB">
+                <p>IRB</p>
+                <p>
+                    A 2D mobile platformer game written in C# and using
+                    Unity engine
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="skills">
+            <div>
+                <img src="" alt="React">
+                <p>React</p>
+            </div>
+            <div>
+                <img src="" alt="Python">
+                <p>Python</p>
+            </div>
+            <div>
+                <img src="" alt="Java">
+                <p>java</p>
+            </div>
+            <div>
+                <img src="" alt="C#">
+                <p>C#</p>
+            </div>
+            <div>
+                <img src="" alt="C">
+                <p>C</p>
+            </div>
+        </div>
+
+        <div id="autobiography">
+            <p>
+
+            </p>
+        </div>
+    </div>
+  </body>
+
+</html>
