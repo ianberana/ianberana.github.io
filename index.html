@@ -2,106 +2,79 @@
 
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Berana's Portfolio</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-        }
-        nav {
-            box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, .1);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        #nav-links {
-            width: 60%;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        #nav-links a{
-            font-family: "Interim";
-            color: inherit;
-            text-decoration: none;
-            margin: 0 20px 0 20px;
-        }
-        
-        .container {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .container div {
-            flex: 1;
-        }
-
-        #skills {
-            display: flex;
-            flex-direction: column;
-        }
-        
-    </style>
-
   </head>
 
   <body>
-    <nav>
-        <div>
+    <div id="navbar" class="container">
+        <div id="nav-name">
+            <img src="images/logo.png" alt="logo img">
             <h2>Ian Berana</h2>
         </div>
         <div id="nav-links">
-            <h2><a href="">Home</a></h2>
-            <h2><a href="">Projects</a></h2>
-            <h2><a href="">About</a></h2>
-            <h2><a href="">Contact</a></h2>
+            <h2><a href="#navbar">Home</a></h2>
+            <h2><a href="#projects">Projects</a></h2>
+            <h2><a href="#autobiography">About</a></h2>
+            <h2><a href="#footer">Contact</a></h2>
         </div>
-    </nav>
+    </div>
 
     <div id="home" class="container">
-        <div id="pic">
-            <img src="" alt="personal img">
+        <div id="pic" style="flex: 1;">
+            <img src="images/profile.png" alt="profile img">
         </div>
-        <div id="description">
-            <p>
-                Welcome to my portfolio! I'm a passionate Frontend Software Engineer dedicated to crafting engaging and intuitive user experiences. 
-                With expertise in HTML, CSS, JavaScript, and frameworks like React.js, I specialize in tuning designs into seamless responsive websites and web applications. 
+        <div style="flex: 2;">
+            <p style="margin-bottom: 50px; font-family: 'Roboto Mono', monospace; font-size: 1.5em; font-weight: 400; color: #50E2BA;">
+                Welcome! I'm 
+            </p>
+            <p style="margin: 0; font-size: 4em; font-weight: 600;">
+                Christian Berana
+            </p>
+            <p style="margin: 0; font-size: 4em; font-weight: 600; color: #757EA0;">
+                I create UI/UX for the web
+            </p>
+            <p style="width: 80%; margin: 30px 0 0 0; font-size: 1.25em; font-weight: 400; color: #757EA0;">
+                I'm a passionate Frontend Software Engineer dedicated to crafting engaging and intuitive user experiences. 
+                I specialize in tuning designs into seamless responsive websites and web applications. 
                 Explore my projects to see how I blend creativity with functionality to bring ideas to life.
             </p>
         </div>
     </div>
 
+
     <div id="projects">
-        <h3 style="text-align: center;">Previous Projects</h3>
-        <div class="container">
-            <div>
-                <img src="" alt="SchoHub">
-                <p>SchoHub</p>
+        <h1>Previous Projects</h1>
+        <div id="cards">
+            <div class="card">
+                <img src="images/schohub.png" alt="SchoHub">
+                <p class="title">SchoHub</p>
                 <p>
-                    
+                    A React app that centralizes the educational resource management of the Young Software Engineers’ Society
                 </p>
             </div>
-            <div>
-                <img src="" alt="Stress Level Identifier">
-                <p>Stress Level Identifier</p>
+            <div class="card">
+                <img src="images/stress.png" alt="Stress Level Identifier">
+                <p class="title">Stress Level Identifier</p>
                 <p>
                     A python program that identifies the stress level, according
-                    to the perceived stress scale (e.g low, moderate, high),
-                    exhibited by a certain Twitter post
+                    to the perceived stress scale exhibited by a certain Twitter post
                 </p>
             </div>
-            <div>
-                <img src="" alt="F1 Retro">
-                <p>F1 Retro</p>
+            <div class="card">
+                <img src="images/F1retro.png" alt="F1 Retro">
+                <p class="title">F1 Retro</p>
                 <p>
                     A JavaFX 2D racing game.
                 </p>
             </div>
-            <div>
-                <img src="" alt="IRB">
-                <p>IRB</p>
+            <div class="card">
+                <img src="images/irb.png" alt="IRB">
+                <p class="title">IRB</p>
                 <p>
                     A 2D mobile platformer game written in C# and using
                     Unity engine
@@ -111,35 +84,60 @@
     </div>
 
     <div class="container">
-        <div id="skills">
-            <div>
-                <img src="" alt="React">
-                <p>React</p>
+        <div>
+            <h1>Skills</h1>
+            <div class="container">
+                <div class="skill">
+                    <img src="images/react.png" alt="React">
+                    <h2>React</h2>
+                </div>
+                <div class="skill">
+                    <img src="images/python.png" alt="Python">
+                    <h2>Python</h2>
+                </div>
+                <div class="skill">
+                    <img src="images/java.png" alt="Java">
+                    <h2>Java</h2>
+                </div>
+                <div class="skill">
+                    <img src="images/csharp.png" alt="C#">
+                    <h2>C#</h2>
+                </div>
+                <div class="skill">
+                    <img src="images/c.png" alt="C">
+                    <h2>C</h2>
+                </div>
             </div>
-            <div>
-                <img src="" alt="Python">
-                <p>Python</p>
-            </div>
-            <div>
-                <img src="" alt="Java">
-                <p>java</p>
-            </div>
-            <div>
-                <img src="" alt="C#">
-                <p>C#</p>
-            </div>
-            <div>
-                <img src="" alt="C">
-                <p>C</p>
-            </div>
+            
         </div>
 
         <div id="autobiography">
+            <h1>Autobiography</h1>
             <p>
-
+                " 
+                    Ian Berana is a simple man, with a simple passion for software engineering, 
+                    and a simple goal of enjoying life early. 
+                "
             </p>
         </div>
     </div>
+
+    
+    <hr style="width: 90%; margin: 80px 0 80px 0; align-self: center;">
+
+    <div id="footer" class="container">
+        <img src="images/logo.png" alt="logo img">
+        <div>
+            <p>
+                Los Baños, Laguna | 09*********** | https://ianberana@github.io
+            </p>
+            <p>
+                ©2024 IanBerana. All Rights Reserved 
+            </p>
+            <a href="#navbar">Back to Top</a>
+        </div>
+    </div>
+
   </body>
 
 </html>
